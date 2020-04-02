@@ -16,7 +16,9 @@
     "start": "npm run build:style && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "commit": "./node_modules/.bin/git-cz",
+    "release": "standard-version"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,8 +36,84 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@commitlint/prompt": "^8.3.5",
     "autoprefixer": "^9.7.5",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.1.0",
+    "husky": "^4.2.3",
     "postcss-cli": "^7.1.0",
+    "standard-version": "^7.1.0",
     "tailwindcss": "^1.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "standard-version": {
+    "types": [
+      {
+        "type": "chore",
+        "section": "Others",
+        "hidden": false
+      },
+      {
+        "type": "revert",
+        "section": "Reverts",
+        "hidden": false
+      },
+      {
+        "type": "fix",
+        "section": "Bug Fixes",
+        "hidden": false
+      },
+      {
+        "type": "feat",
+        "section": "Features",
+        "hidden": false
+      },
+      {
+        "type": "docs",
+        "section": "Docs",
+        "hidden": false
+      },
+      {
+        "type": "style",
+        "section": "Styling",
+        "hidden": false
+      },
+      {
+        "type": "refactor",
+        "section": "Code Refactoring",
+        "hidden": false
+      },
+      {
+        "type": "perf",
+        "section": "Performance Improvements",
+        "hidden": false
+      },
+      {
+        "type": "test",
+        "section": "Tests",
+        "hidden": false
+      },
+      {
+        "type": "build",
+        "section": "Build System",
+        "hidden": false
+      },
+      {
+        "type": "ci",
+        "section": "CI",
+        "hidden": false
+      }
+    ]
   }
 }
