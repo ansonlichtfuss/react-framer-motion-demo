@@ -70,7 +70,7 @@ _This controls which headers are visible/hidden from generated CHANGELOG.md_
   }
 ``` 
 
-#### TEST: With all those packages and configurations installed you're ready to go! Let's go through the commands and make sure everything works.
+#### 8. [VERIFY] With all those packages and configurations installed you're ready to go! Let's go through the commands and make sure everything works.
 
 - Test failed commit message
 
@@ -80,7 +80,7 @@ First let's ensure commit linting is functional. Make a change in your code, the
 
 Now, let's do a proper commit by using our new command line tool: `npm run commit`
 
-#### FINISH: Generate initial release notes
+#### 9. [FINISH] Generate initial release notes
 Alright, commit linting is working, you've got a fresh new commit in your repo's history waiting to be effortlessly printed onto release notes using the new command, `npm run release`. 
  - Since this is the first release using this tool, append the command with `-- --first-release`, so it looks like `npm run release -- --first-release`. 
  - If you want to try out the commands first before having any changes committed, attach `--dry-run` onto the command, it will look like: `npm run release -- --first-release --dry-run`.
