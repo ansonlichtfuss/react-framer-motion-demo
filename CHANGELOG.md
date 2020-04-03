@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/ansonlichtfuss/react-framer-motion-demo/compare/v0.1.0...v0.1.1) (2020-04-03)
+
+
+### Code Refactoring
+
+* remove warning, clean up code preparing for animations ([665a518](https://github.com/ansonlichtfuss/react-framer-motion-demo/commit/665a5181dfefeb7e1365a40c3228db6e04bf50be))
+
 ## 0.1.0 (2020-04-02)
 
 
