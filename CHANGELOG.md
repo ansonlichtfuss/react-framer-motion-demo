@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/ansonlichtfuss/react-framer-motion-demo/compare/v0.1.1...v0.1.2) (2020-04-03)
+
+
+### Features
+
+* **homepage:** added animations to switches and lists ([5d97a35](https://github.com/ansonlichtfuss/react-framer-motion-demo/commit/5d97a350e0fb01e3ffb735fca93b3df97a284707))
+
 ### [0.1.1](https://github.com/ansonlichtfuss/react-framer-motion-demo/compare/v0.1.0...v0.1.1) (2020-04-03)
 
 
